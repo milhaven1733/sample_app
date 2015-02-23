@@ -13,13 +13,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                               password_confirmation: password }
         end
         assert_template 'users/show'
-<<<<<<< HEAD
-        assert_select 'div<CSS id for error explanation>'
-        assert_select 'div<CSS class for field with error>'
-=======
-        assert_select 'div#<CSS id for error explanation>'
-        assert_select 'div.<CSS class for field with error>'
->>>>>>> a586930a5b42223d90d9c2eecc0ed99a1c5a613d
         assert is_logged_in?
       end
     end
